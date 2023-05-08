@@ -1,0 +1,41 @@
+\\ DOUBLE DISCONTINUITY EQP LIBRARY
+\\ EXAMPLE 2: DISCONTINUITIES INTERSECTING OUTSIDE THE DOMAIN
+$ElementType
+\\ 21 : Quad
+21
+$Coords
+\\ Set the coordinates for the element
+\\ 1st col : x
+\\ 2nd col : y
+\\ Coordinates Scheme :
+\\ 	Quad Element :
+\\ 		4-------------3
+\\ 		|             |
+\\ 		|             |
+\\ 		|             |
+\\ 		|             |
+\\ 		|             |
+\\ 		1-------------2
+2.0 1.5
+6.0 2.5
+4.5 4.0
+0.5 3.0
+$NumOfDiscont
+\\ Number of discontinuities crossing the element (1 or 2)
+2
+$DiscontCoefficients
+\\ a,b,c coefficients for each discontinuity
+\\ coefficients are separated by a blank
+0.222222 1.0 -4.5
+0.0 1.0 -2.0
+$ElementPart
+\\ In case of 2 discontinuities choose the element portion
+\\ to integrate
+\\ Part : A, B, C, D, all
+\\ 		3-----4
+\\ 		| \A /|
+\\ 		|B \/D|
+\\ 		| / \ |
+\\ 		|/ C \|
+\\ 		1-----2
+C

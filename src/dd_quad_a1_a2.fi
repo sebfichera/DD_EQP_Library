@@ -1,0 +1,58 @@
+!Copyright(C) 2022 Equivalent-Polynomials.net
+!
+!This file is part of DD EQP Library.
+!
+!DD EQP Library is free software : you can redistribute it and / or modify
+!it under the terms of the GNU General Public License as published by
+!the Free Software Foundation, either version 3 of the License, or
+!(at your option) any later version.
+!
+!DD EQP Library is distributed in the hope that it will be useful,
+!but WITHOUT ANY WARRANTY; without even the implied warranty of
+!MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+!GNU General Public License for more details.
+!
+!You should have received a copy of the GNU General Public License
+!along with DD EQP Library. If not, see <http://www.gnu.org/licenses/>.
+
+! BV part A
+      
+BVa(1)=(2*a2-Abs(a2-c2)+Abs(a2+c2))/a2
+BVa(2)=((a2+c2)*Abs(a2-c2)+(a2-c2)*Abs(a2+c2))/(2.*a2**2)
+BVa(3)=(2*a2**3-(a2**2+a2*c2+c2**2)*Abs(a2-c2)+(a2**2-a2*c2+c2**2)*Abs(a2+c2&
+      &))/(3.*a2**3)
+BVa(4)=0
+BVa(5)=0
+BVa(6)=(2*a2-Abs(a2-c2)+Abs(a2+c2))/(3.*a2)
+      
+! BV part B
+      
+BVb(1)=0
+BVb(2)=0
+BVb(3)=0
+BVb(4)=0
+BVb(5)=0
+BVb(6)=0
+      
+! BV part C
+      
+BVc(1)=(2*a1-Abs(a1-c1)+Abs(a1+c1))/a1
+BVc(2)=((a1+c1)*Abs(a1-c1)+(a1-c1)*Abs(a1+c1))/(2.*a1**2)
+BVc(3)=(2*a1**3-(a1**2+a1*c1+c1**2)*Abs(a1-c1)+(a1**2-a1*c1+c1**2)*Abs(a1+c1&
+      &))/(3.*a1**3)
+BVc(4)=0
+BVc(5)=0
+BVc(6)=(2*a1-Abs(a1-c1)+Abs(a1+c1))/(3.*a1)
+      
+! BV part D
+      
+BVd(1)=(a2*Abs(a1-c1)-a2*Abs(a1+c1)+a1*Abs(a2-c2)-a1*Abs(a2+c2))/(a1*a2)
+BVd(2)=-0.5*((a1+c1)*Abs(a1-c1)+(a1-c1)*Abs(a1+c1))/a1**2-((a2+c2)*Abs(a2-c2&
+      &)+(a2-c2)*Abs(a2+c2))/(2.*a2**2)
+BVd(3)=(((a1**2+a1*c1+c1**2)*Abs(a1-c1))/a1**3-((a1**2-a1*c1+c1**2)*Abs(a1+c&
+      &1))/a1**3+((a2**2+a2*c2+c2**2)*Abs(a2-c2)-(a2**2-a2*c2+c2**2)*Abs(a2+&
+      &c2))/a2**3)/3.
+BVd(4)=0
+BVd(5)=0
+BVd(6)=(a2*Abs(a1-c1)-a2*Abs(a1+c1)+a1*Abs(a2-c2)-a1*Abs(a2+c2))/(3.*a1*a2)
+      

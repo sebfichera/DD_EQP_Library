@@ -1,0 +1,250 @@
+!Copyright(C) 2022 Equivalent-Polynomials.net
+!
+!This file is part of DD EQP Library.
+!
+!DD EQP Library is free software : you can redistribute it and / or modify
+!it under the terms of the GNU General Public License as published by
+!the Free Software Foundation, either version 3 of the License, or
+!(at your option) any later version.
+!
+!DD EQP Library is distributed in the hope that it will be useful,
+!but WITHOUT ANY WARRANTY; without even the implied warranty of
+!MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+!GNU General Public License for more details.
+!
+!You should have received a copy of the GNU General Public License
+!along with DD EQP Library. If not, see <http://www.gnu.org/licenses/>.
+
+! BV part A
+      
+BVa(1)=(2*a2*b2*(-1+s)*Abs(b1-c1)-2*a2*b2*(-1+s)*Abs(b1+c1)+b1*(-((a2-b2+c2)&
+      &*Abs(a2-b2+c2))+(a2+b2+c2)*Abs(a2+b2+c2)-b2*Abs(b2-c2-a2*s)+c2*Abs(b2&
+      &-c2-a2*s)+a2*s*Abs(b2-c2-a2*s)-b2*Abs(b2+c2+a2*s)-c2*Abs(b2+c2+a2*s)-&
+      &a2*s*Abs(b2+c2+a2*s)))/(4.*a2*b1*b2)
+BVa(2)=((3*(-1+s**2)*Abs(b1-c1))/b1-(3*(-1+s**2)*Abs(b1+c1))/b1+((-2*a2**2+a&
+      &2*(b2-c2)+(b2-c2)**2)*Abs(a2-b2+c2)+(2*a2**2+a2*(b2+c2)-(b2+c2)**2)*A&
+      &bs(a2+b2+c2)-b2**2*Abs(b2-c2-a2*s)+2*b2*c2*Abs(b2-c2-a2*s)-c2**2*Abs(&
+      &b2-c2-a2*s)-a2*b2*s*Abs(b2-c2-a2*s)+a2*c2*s*Abs(b2-c2-a2*s)+2*a2**2*s&
+      &**2*Abs(b2-c2-a2*s)+b2**2*Abs(b2+c2+a2*s)+2*b2*c2*Abs(b2+c2+a2*s)+c2*&
+      &*2*Abs(b2+c2+a2*s)-a2*b2*s*Abs(b2+c2+a2*s)-a2*c2*s*Abs(b2+c2+a2*s)-2*&
+      &a2**2*s**2*Abs(b2+c2+a2*s))/(a2**2*b2))/12.
+BVa(3)=((4*(-1+s**3)*Abs(b1-c1))/b1-(4*(-1+s**3)*Abs(b1+c1))/b1-(-((-3*a2**3&
+      &+a2**2*(b2-c2)+a2*(b2-c2)**2+(b2-c2)**3)*Abs(a2-b2+c2))-(3*a2**3+a2**&
+      &2*(b2+c2)-a2*(b2+c2)**2+(b2+c2)**3)*Abs(a2+b2+c2)+b2**3*Abs(b2-c2-a2*&
+      &s)-3*b2**2*c2*Abs(b2-c2-a2*s)+3*b2*c2**2*Abs(b2-c2-a2*s)-c2**3*Abs(b2&
+      &-c2-a2*s)+a2*b2**2*s*Abs(b2-c2-a2*s)-2*a2*b2*c2*s*Abs(b2-c2-a2*s)+a2*&
+      &c2**2*s*Abs(b2-c2-a2*s)+a2**2*b2*s**2*Abs(b2-c2-a2*s)-a2**2*c2*s**2*A&
+      &bs(b2-c2-a2*s)-3*a2**3*s**3*Abs(b2-c2-a2*s)+b2**3*Abs(b2+c2+a2*s)+3*b&
+      &2**2*c2*Abs(b2+c2+a2*s)+3*b2*c2**2*Abs(b2+c2+a2*s)+c2**3*Abs(b2+c2+a2&
+      &*s)-a2*b2**2*s*Abs(b2+c2+a2*s)-2*a2*b2*c2*s*Abs(b2+c2+a2*s)-a2*c2**2*&
+      &s*Abs(b2+c2+a2*s)+a2**2*b2*s**2*Abs(b2+c2+a2*s)+a2**2*c2*s**2*Abs(b2+&
+      &c2+a2*s)+3*a2**3*s**3*Abs(b2+c2+a2*s))/(a2**3*b2))/24.
+BVa(4)=((-3*(b1+c1)*(-1+s)*Abs(b1-c1))/b1**2-(3*(b1-c1)*(-1+s)*Abs(b1+c1))/b&
+      &1**2-(-((a2**2-2*b2**2+b2*c2+c2**2+a2*(b2+2*c2))*Abs(a2-b2+c2))+(a2**&
+      &2-a2*b2-2*b2**2+2*a2*c2-b2*c2+c2**2)*Abs(a2+b2+c2)-2*b2**2*Abs(b2-c2-&
+      &a2*s)+b2*c2*Abs(b2-c2-a2*s)+c2**2*Abs(b2-c2-a2*s)+a2*b2*s*Abs(b2-c2-a&
+      &2*s)+2*a2*c2*s*Abs(b2-c2-a2*s)+a2**2*s**2*Abs(b2-c2-a2*s)+2*b2**2*Abs&
+      &(b2+c2+a2*s)+b2*c2*Abs(b2+c2+a2*s)-c2**2*Abs(b2+c2+a2*s)+a2*b2*s*Abs(&
+      &b2+c2+a2*s)-2*a2*c2*s*Abs(b2+c2+a2*s)-a2**2*s**2*Abs(b2+c2+a2*s))/(a2&
+      &*b2**2))/12.
+BVa(5)=((-6*(b1+c1)*(-1+s**2)*Abs(b1-c1))/b1**2-(6*(b1-c1)*(-1+s**2)*Abs(b1+&
+      &c1))/b1**2+((3*a2**3-(b2-c2)**2*(3*b2+c2)+a2**2*(3*b2+5*c2)+a2*(-3*b2&
+      &**2+2*b2*c2+c2**2))*Abs(a2-b2+c2)-(3*a2**3+(3*b2-c2)*(b2+c2)**2+a2**2&
+      &*(-3*b2+5*c2)+a2*(-3*b2**2-2*b2*c2+c2**2))*Abs(a2+b2+c2)+3*b2**3*Abs(&
+      &b2-c2-a2*s)-5*b2**2*c2*Abs(b2-c2-a2*s)+b2*c2**2*Abs(b2-c2-a2*s)+c2**3&
+      &*Abs(b2-c2-a2*s)+3*a2*b2**2*s*Abs(b2-c2-a2*s)-2*a2*b2*c2*s*Abs(b2-c2-&
+      &a2*s)-a2*c2**2*s*Abs(b2-c2-a2*s)-3*a2**2*b2*s**2*Abs(b2-c2-a2*s)-5*a2&
+      &**2*c2*s**2*Abs(b2-c2-a2*s)-3*a2**3*s**3*Abs(b2-c2-a2*s)+3*b2**3*Abs(&
+      &b2+c2+a2*s)+5*b2**2*c2*Abs(b2+c2+a2*s)+b2*c2**2*Abs(b2+c2+a2*s)-c2**3&
+      &*Abs(b2+c2+a2*s)-3*a2*b2**2*s*Abs(b2+c2+a2*s)-2*a2*b2*c2*s*Abs(b2+c2+&
+      &a2*s)+a2*c2**2*s*Abs(b2+c2+a2*s)-3*a2**2*b2*s**2*Abs(b2+c2+a2*s)+5*a2&
+      &**2*c2*s**2*Abs(b2+c2+a2*s)+3*a2**3*s**3*Abs(b2+c2+a2*s))/(a2**2*b2**&
+      &2))/48.
+BVa(6)=((4*(b1**2+b1*c1+c1**2)*(-1+s)*Abs(b1-c1))/b1**3-(4*(b1**2-b1*c1+c1**&
+      &2)*(-1+s)*Abs(b1+c1))/b1**3+(-((a2**3-3*b2**3+b2**2*c2+b2*c2**2+c2**3&
+      &+a2**2*(b2+3*c2)+a2*(b2**2+2*b2*c2+3*c2**2))*Abs(a2-b2+c2))+(a2**3+3*&
+      &b2**3-a2**2*(b2-3*c2)+b2**2*c2-b2*c2**2+c2**3+a2*(b2**2-2*b2*c2+3*c2*&
+      &*2))*Abs(a2+b2+c2)-3*b2**3*Abs(b2-c2-a2*s)+b2**2*c2*Abs(b2-c2-a2*s)+b&
+      &2*c2**2*Abs(b2-c2-a2*s)+c2**3*Abs(b2-c2-a2*s)+a2*b2**2*s*Abs(b2-c2-a2&
+      &*s)+2*a2*b2*c2*s*Abs(b2-c2-a2*s)+3*a2*c2**2*s*Abs(b2-c2-a2*s)+a2**2*b&
+      &2*s**2*Abs(b2-c2-a2*s)+3*a2**2*c2*s**2*Abs(b2-c2-a2*s)+a2**3*s**3*Abs&
+      &(b2-c2-a2*s)-3*b2**3*Abs(b2+c2+a2*s)-b2**2*c2*Abs(b2+c2+a2*s)+b2*c2**&
+      &2*Abs(b2+c2+a2*s)-c2**3*Abs(b2+c2+a2*s)-a2*b2**2*s*Abs(b2+c2+a2*s)+2*&
+      &a2*b2*c2*s*Abs(b2+c2+a2*s)-3*a2*c2**2*s*Abs(b2+c2+a2*s)+a2**2*b2*s**2&
+      &*Abs(b2+c2+a2*s)-3*a2**2*c2*s**2*Abs(b2+c2+a2*s)-a2**3*s**3*Abs(b2+c2&
+      &+a2*s))/(a2*b2**3))/24.
+      
+! BV part B
+      
+BVb(1)=(-2*a2*b2*(1+s)*Abs(b1-c1)+2*a2*b2*(1+s)*Abs(b1+c1)+b1*(8*a2*b2+(a2-b&
+      &2+c2)*Abs(a2-b2+c2)-(a2+b2+c2)*Abs(a2+b2+c2)+b2*Abs(b2-c2-a2*s)-c2*Ab&
+      &s(b2-c2-a2*s)-a2*s*Abs(b2-c2-a2*s)+b2*Abs(b2+c2+a2*s)+c2*Abs(b2+c2+a2&
+      &*s)+a2*s*Abs(b2+c2+a2*s)))/(4.*a2*b1*b2)
+BVb(2)=((-3*(-1+s**2)*Abs(b1-c1))/b1+(3*(-1+s**2)*Abs(b1+c1))/b1+((2*a2**2-(&
+      &b2-c2)**2+a2*(-b2+c2))*Abs(a2-b2+c2)+(-2*a2**2-a2*(b2+c2)+(b2+c2)**2)&
+      &*Abs(a2+b2+c2)+b2**2*Abs(b2-c2-a2*s)-2*b2*c2*Abs(b2-c2-a2*s)+c2**2*Ab&
+      &s(b2-c2-a2*s)+a2*b2*s*Abs(b2-c2-a2*s)-a2*c2*s*Abs(b2-c2-a2*s)-2*a2**2&
+      &*s**2*Abs(b2-c2-a2*s)-b2**2*Abs(b2+c2+a2*s)-2*b2*c2*Abs(b2+c2+a2*s)-c&
+      &2**2*Abs(b2+c2+a2*s)+a2*b2*s*Abs(b2+c2+a2*s)+a2*c2*s*Abs(b2+c2+a2*s)+&
+      &2*a2**2*s**2*Abs(b2+c2+a2*s))/(a2**2*b2))/12.
+BVb(3)=((-4*(1+s**3)*Abs(b1-c1))/b1+(4*(1+s**3)*Abs(b1+c1))/b1+(16*a2**3*b2+&
+      &(3*a2**3-a2*(b2-c2)**2-(b2-c2)**3+a2**2*(-b2+c2))*Abs(a2-b2+c2)-(3*a2&
+      &**3+a2**2*(b2+c2)-a2*(b2+c2)**2+(b2+c2)**3)*Abs(a2+b2+c2)+b2**3*Abs(b&
+      &2-c2-a2*s)-3*b2**2*c2*Abs(b2-c2-a2*s)+3*b2*c2**2*Abs(b2-c2-a2*s)-c2**&
+      &3*Abs(b2-c2-a2*s)+a2*b2**2*s*Abs(b2-c2-a2*s)-2*a2*b2*c2*s*Abs(b2-c2-a&
+      &2*s)+a2*c2**2*s*Abs(b2-c2-a2*s)+a2**2*b2*s**2*Abs(b2-c2-a2*s)-a2**2*c&
+      &2*s**2*Abs(b2-c2-a2*s)-3*a2**3*s**3*Abs(b2-c2-a2*s)+b2**3*Abs(b2+c2+a&
+      &2*s)+3*b2**2*c2*Abs(b2+c2+a2*s)+3*b2*c2**2*Abs(b2+c2+a2*s)+c2**3*Abs(&
+      &b2+c2+a2*s)-a2*b2**2*s*Abs(b2+c2+a2*s)-2*a2*b2*c2*s*Abs(b2+c2+a2*s)-a&
+      &2*c2**2*s*Abs(b2+c2+a2*s)+a2**2*b2*s**2*Abs(b2+c2+a2*s)+a2**2*c2*s**2&
+      &*Abs(b2+c2+a2*s)+3*a2**3*s**3*Abs(b2+c2+a2*s))/(a2**3*b2))/24.
+BVb(4)=((3*(b1+c1)*(1+s)*Abs(b1-c1))/b1**2+(3*(b1-c1)*(1+s)*Abs(b1+c1))/b1**&
+      &2+(-((a2**2-2*b2**2+b2*c2+c2**2+a2*(b2+2*c2))*Abs(a2-b2+c2))+(a2**2-a&
+      &2*b2-2*b2**2+2*a2*c2-b2*c2+c2**2)*Abs(a2+b2+c2)-2*b2**2*Abs(b2-c2-a2*&
+      &s)+b2*c2*Abs(b2-c2-a2*s)+c2**2*Abs(b2-c2-a2*s)+a2*b2*s*Abs(b2-c2-a2*s&
+      &)+2*a2*c2*s*Abs(b2-c2-a2*s)+a2**2*s**2*Abs(b2-c2-a2*s)+2*b2**2*Abs(b2&
+      &+c2+a2*s)+b2*c2*Abs(b2+c2+a2*s)-c2**2*Abs(b2+c2+a2*s)+a2*b2*s*Abs(b2+&
+      &c2+a2*s)-2*a2*c2*s*Abs(b2+c2+a2*s)-a2**2*s**2*Abs(b2+c2+a2*s))/(a2*b2&
+      &**2))/12.
+BVb(5)=((6*(b1+c1)*(-1+s**2)*Abs(b1-c1))/b1**2+(6*(b1-c1)*(-1+s**2)*Abs(b1+c&
+      &1))/b1**2+((-3*a2**3+(b2-c2)**2*(3*b2+c2)-a2**2*(3*b2+5*c2)+a2*(3*b2*&
+      &*2-2*b2*c2-c2**2))*Abs(a2-b2+c2)+(3*a2**3+(3*b2-c2)*(b2+c2)**2+a2**2*&
+      &(-3*b2+5*c2)+a2*(-3*b2**2-2*b2*c2+c2**2))*Abs(a2+b2+c2)-3*b2**3*Abs(b&
+      &2-c2-a2*s)+5*b2**2*c2*Abs(b2-c2-a2*s)-b2*c2**2*Abs(b2-c2-a2*s)-c2**3*&
+      &Abs(b2-c2-a2*s)-3*a2*b2**2*s*Abs(b2-c2-a2*s)+2*a2*b2*c2*s*Abs(b2-c2-a&
+      &2*s)+a2*c2**2*s*Abs(b2-c2-a2*s)+3*a2**2*b2*s**2*Abs(b2-c2-a2*s)+5*a2*&
+      &*2*c2*s**2*Abs(b2-c2-a2*s)+3*a2**3*s**3*Abs(b2-c2-a2*s)-3*b2**3*Abs(b&
+      &2+c2+a2*s)-5*b2**2*c2*Abs(b2+c2+a2*s)-b2*c2**2*Abs(b2+c2+a2*s)+c2**3*&
+      &Abs(b2+c2+a2*s)+3*a2*b2**2*s*Abs(b2+c2+a2*s)+2*a2*b2*c2*s*Abs(b2+c2+a&
+      &2*s)-a2*c2**2*s*Abs(b2+c2+a2*s)+3*a2**2*b2*s**2*Abs(b2+c2+a2*s)-5*a2*&
+      &*2*c2*s**2*Abs(b2+c2+a2*s)-3*a2**3*s**3*Abs(b2+c2+a2*s))/(a2**2*b2**2&
+      &))/48.
+BVb(6)=((-4*(b1**2+b1*c1+c1**2)*(1+s)*Abs(b1-c1))/b1**3+(4*(b1**2-b1*c1+c1**&
+      &2)*(1+s)*Abs(b1+c1))/b1**3-(-16*a2*b2**3-(a2**3-3*b2**3+b2**2*c2+b2*c&
+      &2**2+c2**3+a2**2*(b2+3*c2)+a2*(b2**2+2*b2*c2+3*c2**2))*Abs(a2-b2+c2)+&
+      &(a2**3+3*b2**3-a2**2*(b2-3*c2)+b2**2*c2-b2*c2**2+c2**3+a2*(b2**2-2*b2&
+      &*c2+3*c2**2))*Abs(a2+b2+c2)-3*b2**3*Abs(b2-c2-a2*s)+b2**2*c2*Abs(b2-c&
+      &2-a2*s)+b2*c2**2*Abs(b2-c2-a2*s)+c2**3*Abs(b2-c2-a2*s)+a2*b2**2*s*Abs&
+      &(b2-c2-a2*s)+2*a2*b2*c2*s*Abs(b2-c2-a2*s)+3*a2*c2**2*s*Abs(b2-c2-a2*s&
+      &)+a2**2*b2*s**2*Abs(b2-c2-a2*s)+3*a2**2*c2*s**2*Abs(b2-c2-a2*s)+a2**3&
+      &*s**3*Abs(b2-c2-a2*s)-3*b2**3*Abs(b2+c2+a2*s)-b2**2*c2*Abs(b2+c2+a2*s&
+      &)+b2*c2**2*Abs(b2+c2+a2*s)-c2**3*Abs(b2+c2+a2*s)-a2*b2**2*s*Abs(b2+c2&
+      &+a2*s)+2*a2*b2*c2*s*Abs(b2+c2+a2*s)-3*a2*c2**2*s*Abs(b2+c2+a2*s)+a2**&
+      &2*b2*s**2*Abs(b2+c2+a2*s)-3*a2**2*c2*s**2*Abs(b2+c2+a2*s)-a2**3*s**3*&
+      &Abs(b2+c2+a2*s))/(a2*b2**3))/24.
+      
+! BV part C
+      
+BVc(1)=(2*a2*b2*(1+s)*Abs(b1-c1)-2*a2*b2*(1+s)*Abs(b1+c1)+b1*((-a2+b2+c2)*Ab&
+      &s(a2-b2-c2)+(a2+b2-c2)*Abs(a2+b2-c2)-b2*Abs(b2-c2-a2*s)+c2*Abs(b2-c2-&
+      &a2*s)+a2*s*Abs(b2-c2-a2*s)-b2*Abs(b2+c2+a2*s)-c2*Abs(b2+c2+a2*s)-a2*s&
+      &*Abs(b2+c2+a2*s)))/(4.*a2*b1*b2)
+BVc(2)=((3*(-1+s**2)*Abs(b1-c1))/b1-(3*(-1+s**2)*Abs(b1+c1))/b1+((2*a2**2-a2&
+      &*(b2+c2)-(b2+c2)**2)*Abs(a2-b2-c2)+(-2*a2**2+(b2-c2)**2+a2*(-b2+c2))*&
+      &Abs(a2+b2-c2)-b2**2*Abs(b2-c2-a2*s)+2*b2*c2*Abs(b2-c2-a2*s)-c2**2*Abs&
+      &(b2-c2-a2*s)-a2*b2*s*Abs(b2-c2-a2*s)+a2*c2*s*Abs(b2-c2-a2*s)+2*a2**2*&
+      &s**2*Abs(b2-c2-a2*s)+b2**2*Abs(b2+c2+a2*s)+2*b2*c2*Abs(b2+c2+a2*s)+c2&
+      &**2*Abs(b2+c2+a2*s)-a2*b2*s*Abs(b2+c2+a2*s)-a2*c2*s*Abs(b2+c2+a2*s)-2&
+      &*a2**2*s**2*Abs(b2+c2+a2*s))/(a2**2*b2))/12.
+BVc(3)=((4*(1+s**3)*Abs(b1-c1))/b1-(4*(1+s**3)*Abs(b1+c1))/b1-(-((-3*a2**3+a&
+      &2**2*(b2+c2)+a2*(b2+c2)**2+(b2+c2)**3)*Abs(a2-b2-c2))-(3*a2**3+a2**2*&
+      &(b2-c2)-a2*(b2-c2)**2+(b2-c2)**3)*Abs(a2+b2-c2)+b2**3*Abs(b2-c2-a2*s)&
+      &-3*b2**2*c2*Abs(b2-c2-a2*s)+3*b2*c2**2*Abs(b2-c2-a2*s)-c2**3*Abs(b2-c&
+      &2-a2*s)+a2*b2**2*s*Abs(b2-c2-a2*s)-2*a2*b2*c2*s*Abs(b2-c2-a2*s)+a2*c2&
+      &**2*s*Abs(b2-c2-a2*s)+a2**2*b2*s**2*Abs(b2-c2-a2*s)-a2**2*c2*s**2*Abs&
+      &(b2-c2-a2*s)-3*a2**3*s**3*Abs(b2-c2-a2*s)+b2**3*Abs(b2+c2+a2*s)+3*b2*&
+      &*2*c2*Abs(b2+c2+a2*s)+3*b2*c2**2*Abs(b2+c2+a2*s)+c2**3*Abs(b2+c2+a2*s&
+      &)-a2*b2**2*s*Abs(b2+c2+a2*s)-2*a2*b2*c2*s*Abs(b2+c2+a2*s)-a2*c2**2*s*&
+      &Abs(b2+c2+a2*s)+a2**2*b2*s**2*Abs(b2+c2+a2*s)+a2**2*c2*s**2*Abs(b2+c2&
+      &+a2*s)+3*a2**3*s**3*Abs(b2+c2+a2*s))/(a2**3*b2))/24.
+BVc(4)=-0.25*((1+s)*((b1+c1)*Abs(b1-c1)+(b1-c1)*Abs(b1+c1)))/b1**2-((a2**2-2&
+      &*b2**2+a2*(b2-2*c2)-b2*c2+c2**2)*Abs(a2-b2-c2)-(a2**2-2*b2**2+b2*c2+c&
+      &2**2-a2*(b2+2*c2))*Abs(a2+b2-c2)-2*b2**2*Abs(b2-c2-a2*s)+b2*c2*Abs(b2&
+      &-c2-a2*s)+c2**2*Abs(b2-c2-a2*s)+a2*b2*s*Abs(b2-c2-a2*s)+2*a2*c2*s*Abs&
+      &(b2-c2-a2*s)+a2**2*s**2*Abs(b2-c2-a2*s)+2*b2**2*Abs(b2+c2+a2*s)+b2*c2&
+      &*Abs(b2+c2+a2*s)-c2**2*Abs(b2+c2+a2*s)+a2*b2*s*Abs(b2+c2+a2*s)-2*a2*c&
+      &2*s*Abs(b2+c2+a2*s)-a2**2*s**2*Abs(b2+c2+a2*s))/(12.*a2*b2**2)
+BVc(5)=((-6*(-1+s**2)*((b1+c1)*Abs(b1-c1)+(b1-c1)*Abs(b1+c1)))/b1**2+((3*a2*&
+      &*3+a2**2*(3*b2-5*c2)-(3*b2-c2)*(b2+c2)**2+a2*(-3*b2**2-2*b2*c2+c2**2)&
+      &)*Abs(a2-b2-c2)-(3*a2**3+(b2-c2)**2*(3*b2+c2)-a2**2*(3*b2+5*c2)+a2*(-&
+      &3*b2**2+2*b2*c2+c2**2))*Abs(a2+b2-c2)+3*b2**3*Abs(b2-c2-a2*s)-5*b2**2&
+      &*c2*Abs(b2-c2-a2*s)+b2*c2**2*Abs(b2-c2-a2*s)+c2**3*Abs(b2-c2-a2*s)+3*&
+      &a2*b2**2*s*Abs(b2-c2-a2*s)-2*a2*b2*c2*s*Abs(b2-c2-a2*s)-a2*c2**2*s*Ab&
+      &s(b2-c2-a2*s)-3*a2**2*b2*s**2*Abs(b2-c2-a2*s)-5*a2**2*c2*s**2*Abs(b2-&
+      &c2-a2*s)-3*a2**3*s**3*Abs(b2-c2-a2*s)+3*b2**3*Abs(b2+c2+a2*s)+5*b2**2&
+      &*c2*Abs(b2+c2+a2*s)+b2*c2**2*Abs(b2+c2+a2*s)-c2**3*Abs(b2+c2+a2*s)-3*&
+      &a2*b2**2*s*Abs(b2+c2+a2*s)-2*a2*b2*c2*s*Abs(b2+c2+a2*s)+a2*c2**2*s*Ab&
+      &s(b2+c2+a2*s)-3*a2**2*b2*s**2*Abs(b2+c2+a2*s)+5*a2**2*c2*s**2*Abs(b2+&
+      &c2+a2*s)+3*a2**3*s**3*Abs(b2+c2+a2*s))/(a2**2*b2**2))/48.
+BVc(6)=((4*(b1**2+b1*c1+c1**2)*(1+s)*Abs(b1-c1))/b1**3-(4*(b1**2-b1*c1+c1**2&
+      &)*(1+s)*Abs(b1+c1))/b1**3+(-((a2**3-3*b2**3+a2**2*(b2-3*c2)-b2**2*c2+&
+      &b2*c2**2-c2**3+a2*(b2**2-2*b2*c2+3*c2**2))*Abs(a2-b2-c2))+(a2**3+3*b2&
+      &**3-b2**2*c2-b2*c2**2-c2**3-a2**2*(b2+3*c2)+a2*(b2**2+2*b2*c2+3*c2**2&
+      &))*Abs(a2+b2-c2)-3*b2**3*Abs(b2-c2-a2*s)+b2**2*c2*Abs(b2-c2-a2*s)+b2*&
+      &c2**2*Abs(b2-c2-a2*s)+c2**3*Abs(b2-c2-a2*s)+a2*b2**2*s*Abs(b2-c2-a2*s&
+      &)+2*a2*b2*c2*s*Abs(b2-c2-a2*s)+3*a2*c2**2*s*Abs(b2-c2-a2*s)+a2**2*b2*&
+      &s**2*Abs(b2-c2-a2*s)+3*a2**2*c2*s**2*Abs(b2-c2-a2*s)+a2**3*s**3*Abs(b&
+      &2-c2-a2*s)-3*b2**3*Abs(b2+c2+a2*s)-b2**2*c2*Abs(b2+c2+a2*s)+b2*c2**2*&
+      &Abs(b2+c2+a2*s)-c2**3*Abs(b2+c2+a2*s)-a2*b2**2*s*Abs(b2+c2+a2*s)+2*a2&
+      &*b2*c2*s*Abs(b2+c2+a2*s)-3*a2*c2**2*s*Abs(b2+c2+a2*s)+a2**2*b2*s**2*A&
+      &bs(b2+c2+a2*s)-3*a2**2*c2*s**2*Abs(b2+c2+a2*s)-a2**3*s**3*Abs(b2+c2+a&
+      &2*s))/(a2*b2**3))/24.
+      
+! BV part D
+      
+BVd(1)=(-2*a2*b2*(-1+s)*Abs(b1-c1)+2*a2*b2*(-1+s)*Abs(b1+c1)+b1*(8*a2*b2+(a2&
+      &-b2-c2)*Abs(a2-b2-c2)-(a2+b2-c2)*Abs(a2+b2-c2)+b2*Abs(b2-c2-a2*s)-c2*&
+      &Abs(b2-c2-a2*s)-a2*s*Abs(b2-c2-a2*s)+b2*Abs(b2+c2+a2*s)+c2*Abs(b2+c2+&
+      &a2*s)+a2*s*Abs(b2+c2+a2*s)))/(4.*a2*b1*b2)
+BVd(2)=((-3*(-1+s**2)*Abs(b1-c1))/b1+(3*(-1+s**2)*Abs(b1+c1))/b1+((-2*a2**2+&
+      &a2*(b2+c2)+(b2+c2)**2)*Abs(a2-b2-c2)+(2*a2**2+a2*(b2-c2)-(b2-c2)**2)*&
+      &Abs(a2+b2-c2)+b2**2*Abs(b2-c2-a2*s)-2*b2*c2*Abs(b2-c2-a2*s)+c2**2*Abs&
+      &(b2-c2-a2*s)+a2*b2*s*Abs(b2-c2-a2*s)-a2*c2*s*Abs(b2-c2-a2*s)-2*a2**2*&
+      &s**2*Abs(b2-c2-a2*s)-b2**2*Abs(b2+c2+a2*s)-2*b2*c2*Abs(b2+c2+a2*s)-c2&
+      &**2*Abs(b2+c2+a2*s)+a2*b2*s*Abs(b2+c2+a2*s)+a2*c2*s*Abs(b2+c2+a2*s)+2&
+      &*a2**2*s**2*Abs(b2+c2+a2*s))/(a2**2*b2))/12.
+BVd(3)=((-4*(-1+s**3)*Abs(b1-c1))/b1+(4*(-1+s**3)*Abs(b1+c1))/b1+(16*a2**3*b&
+      &2+(3*a2**3-a2**2*(b2+c2)-a2*(b2+c2)**2-(b2+c2)**3)*Abs(a2-b2-c2)+(-3*&
+      &a2**3+a2*(b2-c2)**2-(b2-c2)**3+a2**2*(-b2+c2))*Abs(a2+b2-c2)+b2**3*Ab&
+      &s(b2-c2-a2*s)-3*b2**2*c2*Abs(b2-c2-a2*s)+3*b2*c2**2*Abs(b2-c2-a2*s)-c&
+      &2**3*Abs(b2-c2-a2*s)+a2*b2**2*s*Abs(b2-c2-a2*s)-2*a2*b2*c2*s*Abs(b2-c&
+      &2-a2*s)+a2*c2**2*s*Abs(b2-c2-a2*s)+a2**2*b2*s**2*Abs(b2-c2-a2*s)-a2**&
+      &2*c2*s**2*Abs(b2-c2-a2*s)-3*a2**3*s**3*Abs(b2-c2-a2*s)+b2**3*Abs(b2+c&
+      &2+a2*s)+3*b2**2*c2*Abs(b2+c2+a2*s)+3*b2*c2**2*Abs(b2+c2+a2*s)+c2**3*A&
+      &bs(b2+c2+a2*s)-a2*b2**2*s*Abs(b2+c2+a2*s)-2*a2*b2*c2*s*Abs(b2+c2+a2*s&
+      &)-a2*c2**2*s*Abs(b2+c2+a2*s)+a2**2*b2*s**2*Abs(b2+c2+a2*s)+a2**2*c2*s&
+      &**2*Abs(b2+c2+a2*s)+3*a2**3*s**3*Abs(b2+c2+a2*s))/(a2**3*b2))/24.
+BVd(4)=((3*(b1+c1)*(-1+s)*Abs(b1-c1))/b1**2+(3*(b1-c1)*(-1+s)*Abs(b1+c1))/b1&
+      &**2+((a2**2-2*b2**2+a2*(b2-2*c2)-b2*c2+c2**2)*Abs(a2-b2-c2)-(a2**2-2*&
+      &b2**2+b2*c2+c2**2-a2*(b2+2*c2))*Abs(a2+b2-c2)-2*b2**2*Abs(b2-c2-a2*s)&
+      &+b2*c2*Abs(b2-c2-a2*s)+c2**2*Abs(b2-c2-a2*s)+a2*b2*s*Abs(b2-c2-a2*s)+&
+      &2*a2*c2*s*Abs(b2-c2-a2*s)+a2**2*s**2*Abs(b2-c2-a2*s)+2*b2**2*Abs(b2+c&
+      &2+a2*s)+b2*c2*Abs(b2+c2+a2*s)-c2**2*Abs(b2+c2+a2*s)+a2*b2*s*Abs(b2+c2&
+      &+a2*s)-2*a2*c2*s*Abs(b2+c2+a2*s)-a2**2*s**2*Abs(b2+c2+a2*s))/(a2*b2**&
+      &2))/12.
+BVd(5)=((6*(-1+s**2)*((b1+c1)*Abs(b1-c1)+(b1-c1)*Abs(b1+c1)))/b1**2+((-3*a2*&
+      &*3+(3*b2-c2)*(b2+c2)**2+a2**2*(-3*b2+5*c2)+a2*(3*b2**2+2*b2*c2-c2**2)&
+      &)*Abs(a2-b2-c2)+(3*a2**3+(b2-c2)**2*(3*b2+c2)-a2**2*(3*b2+5*c2)+a2*(-&
+      &3*b2**2+2*b2*c2+c2**2))*Abs(a2+b2-c2)-3*b2**3*Abs(b2-c2-a2*s)+5*b2**2&
+      &*c2*Abs(b2-c2-a2*s)-b2*c2**2*Abs(b2-c2-a2*s)-c2**3*Abs(b2-c2-a2*s)-3*&
+      &a2*b2**2*s*Abs(b2-c2-a2*s)+2*a2*b2*c2*s*Abs(b2-c2-a2*s)+a2*c2**2*s*Ab&
+      &s(b2-c2-a2*s)+3*a2**2*b2*s**2*Abs(b2-c2-a2*s)+5*a2**2*c2*s**2*Abs(b2-&
+      &c2-a2*s)+3*a2**3*s**3*Abs(b2-c2-a2*s)-3*b2**3*Abs(b2+c2+a2*s)-5*b2**2&
+      &*c2*Abs(b2+c2+a2*s)-b2*c2**2*Abs(b2+c2+a2*s)+c2**3*Abs(b2+c2+a2*s)+3*&
+      &a2*b2**2*s*Abs(b2+c2+a2*s)+2*a2*b2*c2*s*Abs(b2+c2+a2*s)-a2*c2**2*s*Ab&
+      &s(b2+c2+a2*s)+3*a2**2*b2*s**2*Abs(b2+c2+a2*s)-5*a2**2*c2*s**2*Abs(b2+&
+      &c2+a2*s)-3*a2**3*s**3*Abs(b2+c2+a2*s))/(a2**2*b2**2))/48.
+BVd(6)=((-4*(b1**2+b1*c1+c1**2)*(-1+s)*Abs(b1-c1))/b1**3+(4*(b1**2-b1*c1+c1*&
+      &*2)*(-1+s)*Abs(b1+c1))/b1**3-(-16*a2*b2**3-(a2**3-3*b2**3+a2**2*(b2-3&
+      &*c2)-b2**2*c2+b2*c2**2-c2**3+a2*(b2**2-2*b2*c2+3*c2**2))*Abs(a2-b2-c2&
+      &)-(-a2**3-3*b2**3+b2**2*c2+b2*c2**2+c2**3+a2**2*(b2+3*c2)-a2*(b2**2+2&
+      &*b2*c2+3*c2**2))*Abs(a2+b2-c2)-3*b2**3*Abs(b2-c2-a2*s)+b2**2*c2*Abs(b&
+      &2-c2-a2*s)+b2*c2**2*Abs(b2-c2-a2*s)+c2**3*Abs(b2-c2-a2*s)+a2*b2**2*s*&
+      &Abs(b2-c2-a2*s)+2*a2*b2*c2*s*Abs(b2-c2-a2*s)+3*a2*c2**2*s*Abs(b2-c2-a&
+      &2*s)+a2**2*b2*s**2*Abs(b2-c2-a2*s)+3*a2**2*c2*s**2*Abs(b2-c2-a2*s)+a2&
+      &**3*s**3*Abs(b2-c2-a2*s)-3*b2**3*Abs(b2+c2+a2*s)-b2**2*c2*Abs(b2+c2+a&
+      &2*s)+b2*c2**2*Abs(b2+c2+a2*s)-c2**3*Abs(b2+c2+a2*s)-a2*b2**2*s*Abs(b2&
+      &+c2+a2*s)+2*a2*b2*c2*s*Abs(b2+c2+a2*s)-3*a2*c2**2*s*Abs(b2+c2+a2*s)+a&
+      &2**2*b2*s**2*Abs(b2+c2+a2*s)-3*a2**2*c2*s**2*Abs(b2+c2+a2*s)-a2**3*s*&
+      &*3*Abs(b2+c2+a2*s))/(a2*b2**3))/24.
+      

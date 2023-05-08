@@ -1,0 +1,24 @@
+!Copyright(C) 2022 Equivalent-Polynomials.net
+!
+!This file is part of DD EQP Library.
+!
+!DD EQP Library is free software : you can redistribute it and / or modify
+!it under the terms of the GNU General Public License as published by
+!the Free Software Foundation, either version 3 of the License, or
+!(at your option) any later version.
+!
+!DD EQP Library is distributed in the hope that it will be useful,
+!but WITHOUT ANY WARRANTY; without even the implied warranty of
+!MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+!GNU General Public License for more details.
+!
+!You should have received a copy of the GNU General Public License
+!along with DD EQP Library. If not, see <http://www.gnu.org/licenses/>.
+
+! a
+BV(1)=(2*a-abs01+abs02)/a
+BV(2)=((a+c)*abs01+(a-c)*abs02)/(2*a2)
+BV(3)=(2*a3-(a2+a*c+c2)*abs01+(a2-a*c+c2)*abs02)/(3*a3)
+BV(4)=0
+BV(5)=0
+BV(6)=(2*a-abs01+abs02)/(3*a)

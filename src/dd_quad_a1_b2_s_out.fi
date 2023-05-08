@@ -1,0 +1,83 @@
+!Copyright(C) 2022 Equivalent-Polynomials.net
+!
+!This file is part of DD EQP Library.
+!
+!DD EQP Library is free software : you can redistribute it and / or modify
+!it under the terms of the GNU General Public License as published by
+!the Free Software Foundation, either version 3 of the License, or
+!(at your option) any later version.
+!
+!DD EQP Library is distributed in the hope that it will be useful,
+!but WITHOUT ANY WARRANTY; without even the implied warranty of
+!MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+!GNU General Public License for more details.
+!
+!You should have received a copy of the GNU General Public License
+!along with DD EQP Library. If not, see <http://www.gnu.org/licenses/>.
+
+! BV part A
+      
+BVa(1)=(2*b2*Abs(a1+c1)+a1*(-1+s)*Abs(b2-c2)+a1*Abs(b2+c2)-a1*s*Abs(b2+c2)-2&
+      &*b2*Abs(c1+a1*s))/(2.*a1*b2)
+BVa(2)=(2*b2*(a1-c1)*Abs(a1+c1)+a1**2*(-1+s**2)*Abs(b2-c2)+a1**2*Abs(b2+c2)-&
+      &a1**2*s**2*Abs(b2+c2)+2*b2*c1*Abs(c1+a1*s)-2*a1*b2*s*Abs(c1+a1*s))/(4&
+      &.*a1**2*b2)
+BVa(3)=(2*b2*(a1**2-a1*c1+c1**2)*Abs(a1+c1)+a1**3*(-1+s**3)*Abs(b2-c2)+a1**3&
+      &*Abs(b2+c2)-a1**3*s**3*Abs(b2+c2)-2*b2*c1**2*Abs(c1+a1*s)+2*a1*b2*c1*&
+      &s*Abs(c1+a1*s)-2*a1**2*b2*s**2*Abs(c1+a1*s))/(6.*a1**3*b2)
+BVa(4)=-0.25*((-1+s)*((b2+c2)*Abs(b2-c2)+(b2-c2)*Abs(b2+c2)))/b2**2
+BVa(5)=-0.125*((-1+s**2)*((b2+c2)*Abs(b2-c2)+(b2-c2)*Abs(b2+c2)))/b2**2
+BVa(6)=(2*b2**3*Abs(a1+c1)+a1*(b2**2+b2*c2+c2**2)*(-1+s)*Abs(b2-c2)+a1*b2**2&
+      &*Abs(b2+c2)-a1*b2*c2*Abs(b2+c2)+a1*c2**2*Abs(b2+c2)-a1*b2**2*s*Abs(b2&
+      &+c2)+a1*b2*c2*s*Abs(b2+c2)-a1*c2**2*s*Abs(b2+c2)-2*b2**3*Abs(c1+a1*s)&
+      &)/(6.*a1*b2**3)
+      
+! BV part B
+      
+BVb(1)=(4*a1*b2-2*b2*Abs(a1-c1)+(a1-a1*s)*Abs(b2-c2)-a1*Abs(b2+c2)+a1*s*Abs(&
+      &b2+c2)+2*b2*Abs(c1+a1*s))/(2.*a1*b2)
+BVb(2)=(2*b2*(a1+c1)*Abs(a1-c1)-a1**2*(-1+s**2)*Abs(b2-c2)-a1**2*Abs(b2+c2)+&
+      &a1**2*s**2*Abs(b2+c2)-2*b2*c1*Abs(c1+a1*s)+2*a1*b2*s*Abs(c1+a1*s))/(4&
+      &.*a1**2*b2)
+BVb(3)=(4*a1**3*b2-2*b2*(a1**2+a1*c1+c1**2)*Abs(a1-c1)-a1**3*(-1+s**3)*Abs(b&
+      &2-c2)-a1**3*Abs(b2+c2)+a1**3*s**3*Abs(b2+c2)+2*b2*c1**2*Abs(c1+a1*s)-&
+      &2*a1*b2*c1*s*Abs(c1+a1*s)+2*a1**2*b2*s**2*Abs(c1+a1*s))/(6.*a1**3*b2)
+BVb(4)=((-1+s)*((b2+c2)*Abs(b2-c2)+(b2-c2)*Abs(b2+c2)))/(4.*b2**2)
+BVb(5)=((-1+s**2)*((b2+c2)*Abs(b2-c2)+(b2-c2)*Abs(b2+c2)))/(8.*b2**2)
+BVb(6)=(4*a1*b2**3-2*b2**3*Abs(a1-c1)-a1*(b2**2+b2*c2+c2**2)*(-1+s)*Abs(b2-c&
+      &2)-a1*b2**2*Abs(b2+c2)+a1*b2*c2*Abs(b2+c2)-a1*c2**2*Abs(b2+c2)+a1*b2*&
+      &*2*s*Abs(b2+c2)-a1*b2*c2*s*Abs(b2+c2)+a1*c2**2*s*Abs(b2+c2)+2*b2**3*A&
+      &bs(c1+a1*s))/(6.*a1*b2**3)
+      
+! BV part C
+      
+BVc(1)=-0.5*(-2*b2*Abs(a1-c1)-a1*(1+s)*Abs(b2-c2)+a1*Abs(b2+c2)+a1*s*Abs(b2+&
+      &c2)+2*b2*Abs(c1+a1*s))/(a1*b2)
+BVc(2)=-1+s**2-((-1+s**2)*(2*b2-Abs(b2-c2)+Abs(b2+c2)))/(4.*b2)-(a1**2*(-1+s&
+      &**2)+(a1+c1)*Abs(a1-c1)+(-c1+a1*s)*Abs(c1+a1*s))/(2.*a1**2)
+BVc(3)=((2*(a1**2+a1*c1+c1**2)*Abs(a1-c1))/a1**3+((1+s**3)*Abs(b2-c2)-(1+s**&
+      &3)*Abs(b2+c2)-(2*b2*(c1**2-a1*c1*s+a1**2*s**2)*Abs(c1+a1*s))/a1**3)/b&
+      &2)/6.
+BVc(4)=-0.25*((1+s)*((b2+c2)*Abs(b2-c2)+(b2-c2)*Abs(b2+c2)))/b2**2
+BVc(5)=-0.125*((-1+s**2)*((b2+c2)*Abs(b2-c2)+(b2-c2)*Abs(b2+c2)))/b2**2
+BVc(6)=(4*(1+s)-((1+s)*(2*b2**3-(b2**2+b2*c2+c2**2)*Abs(b2-c2)+(b2**2-b2*c2+&
+      &c2**2)*Abs(b2+c2)))/b2**3-(2*(a1+a1*s-Abs(a1-c1)+Abs(c1+a1*s)))/a1)/6&
+      &.
+      
+! BV part D
+      
+BVd(1)=(4*a1*b2-2*b2*Abs(a1+c1)-a1*(1+s)*Abs(b2-c2)+a1*Abs(b2+c2)+a1*s*Abs(b&
+      &2+c2)+2*b2*Abs(c1+a1*s))/(2.*a1*b2)
+BVd(2)=(2*b2*(-a1+c1)*Abs(a1+c1)-a1**2*(-1+s**2)*Abs(b2-c2)-a1**2*Abs(b2+c2)&
+      &+a1**2*s**2*Abs(b2+c2)-2*b2*c1*Abs(c1+a1*s)+2*a1*b2*s*Abs(c1+a1*s))/(&
+      &4.*a1**2*b2)
+BVd(3)=(4*a1**3*b2-2*b2*(a1**2-a1*c1+c1**2)*Abs(a1+c1)-a1**3*(1+s**3)*Abs(b2&
+      &-c2)+a1**3*Abs(b2+c2)+a1**3*s**3*Abs(b2+c2)+2*b2*c1**2*Abs(c1+a1*s)-2&
+      &*a1*b2*c1*s*Abs(c1+a1*s)+2*a1**2*b2*s**2*Abs(c1+a1*s))/(6.*a1**3*b2)
+BVd(4)=((1+s)*((b2+c2)*Abs(b2-c2)+(b2-c2)*Abs(b2+c2)))/(4.*b2**2)
+BVd(5)=((-1+s**2)*((b2+c2)*Abs(b2-c2)+(b2-c2)*Abs(b2+c2)))/(8.*b2**2)
+BVd(6)=(4*a1*b2**3-2*b2**3*Abs(a1+c1)-a1*(b2**2+b2*c2+c2**2)*(1+s)*Abs(b2-c2&
+      &)+a1*b2**2*Abs(b2+c2)-a1*b2*c2*Abs(b2+c2)+a1*c2**2*Abs(b2+c2)+a1*b2**&
+      &2*s*Abs(b2+c2)-a1*b2*c2*s*Abs(b2+c2)+a1*c2**2*s*Abs(b2+c2)+2*b2**3*Ab&
+      &s(c1+a1*s))/(6.*a1*b2**3)
+      

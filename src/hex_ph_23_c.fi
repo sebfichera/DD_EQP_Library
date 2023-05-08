@@ -1,0 +1,64 @@
+!Copyright(C) 2022 Equivalent-Polynomials.net
+!
+!This file is part of DD EQP Library.
+!
+!DD EQP Library is free software : you can redistribute it and / or modify
+!it under the terms of the GNU General Public License as published by
+!the Free Software Foundation, either version 3 of the License, or
+!(at your option) any later version.
+!
+!DD EQP Library is distributed in the hope that it will be useful,
+!but WITHOUT ANY WARRANTY; without even the implied warranty of
+!MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+!GNU General Public License for more details.
+!
+!You should have received a copy of the GNU General Public License
+!along with DD EQP Library. If not, see <http://www.gnu.org/licenses/>.
+
+!c
+
+BV(1)=(2*(2*c-abs02+abs01))/c
+
+BV(2)=0
+
+BV(3)=(2*(2*c-abs02+abs01))/(3*c)
+
+BV(4)=0
+
+BV(5)=0
+
+BV(6)=0
+
+BV(7)=(2*(2*c-abs02+abs01))/(3*c)
+
+BV(8)=0
+
+BV(9)=(2*(2*c-abs02+abs01))/(9*c)
+
+BV(10)=((c+d)*abs02+(c-d)*abs01)/c2
+
+BV(11)=0
+
+BV(12)=((c+d)*abs02+(c-d)*abs01)/(3*c2)
+
+BV(13)=0
+
+BV(14)=0
+
+BV(15)=0
+
+BV(16)=((c+d)*abs02+(c-d)*abs01)/(3*c2)
+
+BV(17)=0
+
+BV(18)=(2*(2*c3-(c2+c*d+d2)*abs02+(c2-c*d+d2)*abs01))/(3*c3)
+
+BV(19)=0
+
+BV(20)=(2*(2*c3-(c2+c*d+d2)*abs02+(c2-c*d+d2)*abs01))/(9*c3)
+
+BV(21)=0
+
+BV(22)=0
+
+BV(23)=(2*(2*c3-(c2+c*d+d2)*abs02+(c2-c*d+d2)*abs01))/(9*c3)
